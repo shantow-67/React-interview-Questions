@@ -87,8 +87,49 @@ The correct way to conditionally render an element based on a component's state 
 
 ## Question 20: 👉 Can you use this in JSX ?
  ✅Explanation :
-You can use the this keyword in JSX to refer to the current instance of a component.It works the same way as it does in JavaScript.
+You can use the `this` keyword in JSX to refer to the current instance of a component.It works the same way as it does in JavaScript.
 
+
+## Question 21: 👉 What is a React element ?
+ ✅Explanation :
+ A React element is an object that represents a DOM node in a React application.It is a lightweight description of what to render.
+
+## Question 22: 👉 What is a React portal ?
+✅Explanation :
+A React portal is an object that represents a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.It allows you to escape the parent component's DOM and attach the children to a different DOM node.
+
+## Question 23: 👉 What is the correct way to stop listening for an event in React ?
+ ✅Explanation :
+The correct way to stop listening for an event in React is `element.removeEventListener('click', myEventHandler)`.The `removeEventListener` method allows you to remove an event handler from an element.It should be called on the element and it takes the event type and the event handler as arguments.The event handler should be the same function or method that was passed to the addEventListener method.
+
+## Question 24: 👉 What is the correct way to handle form input changes in React ?
+✅Explanation :
+ The correct way to handle form input changes in React is `onChange = { e => this.setState({ value: e.target.value }) }`.The `setState()` method of a React component updates the component's state and triggers a re-render of the component. You can pass a function to the onChange prop of the input element that updates the component's state with the value of the input.You can access the input value in the function by accessing the target property of the Event object and the value property of the target.You can update the component's state using the `setState()` method and passing an object with the updated state as an argument.
+
+## Question 25: 👉 What is the correct way to define an event handler in React ?
+✅Explanation :
+ The correct way to define an event handler in React is `onClick = { myEventHandler }`.The event handler should be a function or a method and it should be passed as a prop to the element that triggers the event.The event handler should be camelCase and should start with on.
+
+## Question 26: 👉 What is the purpose of the useState hook in React ?
+ ✅Explanation :
+ The purpose of the `useState` hook in React is to define the state of a function component. It allows a function component to have a state and to update the state when the component is re-rendered.
+
+## Question 27: 👉
+What is the purpose of the `shouldComponentUpdate` method in a class component in React ?
+ ✅Explanation :
+The purpose of the `shouldComponentUpdate` method in a class component in React is to determine if the component should update when the props or state change.It is called before the component is updated and is used to optimize performance by allowing the component to return false if it determines that the component does not need to be re - rendered.
+
+## Question 28: 👉 What is the purpose of the render method in a class component in React ?
+✅Explanation :
+The purpose of the render method in a class component in React is to define the UI of the component.It is called every time the component is updated and is used to return a description of what the component should render.It must return a single React element.
+
+## Question 29: 👉 What is the correct way to render a list in React ?
+ ✅Explanation :
+The correct way to render a list in React is `{ list.map(item => <li>{item}</li>) }`. The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.You can pass a function to the `map()` method that returns an element to be rendered for each item in the list.You can then wrap the resulting array in a parent element, such as a `<ul> or < ol >`, and pass it to the `render()` method.
+
+## Question 30: 👉 What is a higher - order component in React ?
+✅Explanation :
+A higher-order component in React is a function that takes a component as an argument and returns a new component.It can be used to add additional behavior to a component.
 
 
 
