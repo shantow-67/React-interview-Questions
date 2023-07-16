@@ -37,7 +37,7 @@ The correct way to listen for multiple events in React is element.addEventListen
 ✅Explanation :
 The difference between a prop and a state in React is that a prop is an argument passed from a parent component to a child component, while a state is an object that is managed within a component.
 
- Question 9: 👉 Can you use a JSX spread attribute with an array in React ?
+## Question 9: 👉 Can you use a JSX spread attribute with an array in React ?
  ✅Explanation :
  You can use a JSX spread attribute with an array in React if the array has objects as elements.The spread attribute will spread the properties of the objects into separate props.If the array has elements of a different type, the spread attribute will not work.
 
