@@ -15,4 +15,35 @@ The correct way to conditionally render an element in React is { condition && <E
 
  ✅Explanation :
  You can use JavaScript expressions in JSX by wrapping them in curly braces.This allows you to insert dynamic values into your JSX code.
+
+
+ ## Question 4: 👉 What is the purpose of the componentDidMount method in a class component in React ?
+ ✅Explanation:
+ The purpose of the componentDidMount method in a class component in React is to perform actions after the component is mounted.It is called once after the component is mounted and is used to trigger side effects or to make API calls.
+
+## Question 5: 👉 Can you use the useReducer hook with an object as the second argument in React ?
+✅Explanation :
+You cannot use the useReducer hook with an object as the second argument in React because the second argument must be a function. The useReducer hook expects a reducer function as the second argument, which takes the current state and an action as arguments and returns the new state.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
  
