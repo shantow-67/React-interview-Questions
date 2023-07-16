@@ -69,7 +69,7 @@ The purpose of the componentWillUnmount method in a class component in React is 
 ✅Explanation :
 The correct way to assign a key to each element in a list in React is
 
-{list.map((item, index) => <li key={index}>{item}</li>)}  
+`{list.map((item, index) => <li key={index}>{item}</li>)}`  
 
 The map() method creates a new array with the results of calling a provided function on every element in the calling array.You can pass a function to the map() method that returns an element with a key for each item in the list.You can use the index of the item in the list as the key, or a unique field of the item, such as the id field.You can then wrap the resulting array in a parent element, such as a<ul> or < ol >, and pass it to the render() method.
 
