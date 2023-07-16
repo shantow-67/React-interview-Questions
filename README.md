@@ -9,3 +9,10 @@ The correct way to conditionally render an element in React is { condition && <E
 
  ✅Explanation :
  The correct way to conditionally render a component with props in React is { condition && <MyComponent prop1={value1} prop2={value2} /> }.The && operator allows you to conditionally render a component based on a condition.If the condition is true, the component will be rendered with the specified props; if the condition is false, the component will not be rendered.You can pass the component with the props as the right - hand operand of the && operator.
+
+
+##   Question 3: 👉 Can you use JavaScript expressions in JSX ?
+
+ ✅Explanation :
+ You can use JavaScript expressions in JSX by wrapping them in curly braces.This allows you to insert dynamic values into your JSX code.
+ 
