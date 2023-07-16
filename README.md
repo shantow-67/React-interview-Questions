@@ -3,7 +3,7 @@
 ## 👉 Question 1 : What is the correct way to conditionally render an element in React ?
 
 ✅Explanation :
-The correct way to conditionally render an element in React is { condition && <Element /> }.The && operator allows you to conditionally render an element based on a condition.If the condition is true, the element will be rendered; if the condition is false, the element will not be rendered.
+The correct way to conditionally render an element in React is `{ condition && <Element /> }` The `&&` operator allows you to conditionally render an element based on a condition.If the condition is true, the element will be rendered; if the condition is false, the element will not be rendered.
 
 ## Question 2: 👉 What is the correct way to conditionally render a component with props in React ?
 
@@ -19,19 +19,19 @@ The correct way to conditionally render an element in React is { condition && <E
 
  ## Question 4: 👉 What is the purpose of the componentDidMount method in a class component in React ?
  ✅Explanation:
- The purpose of the componentDidMount method in a class component in React is to perform actions after the component is mounted.It is called once after the component is mounted and is used to trigger side effects or to make API calls.
+ The purpose of the `componentDidMount` method in a class component in React is to perform actions after the component is mounted.It is called once after the component is mounted and is used to trigger side effects or to make API calls.
 
 ## Question 5: 👉 Can you use the useReducer hook with an object as the second argument in React ?
 ✅Explanation :
-You cannot use the useReducer hook with an object as the second argument in React because the second argument must be a function. The useReducer hook expects a reducer function as the second argument, which takes the current state and an action as arguments and returns the new state.
+You cannot use the `useReducer` hook with an object as the second argument in React because the second argument must be a function. The `useReducer` hook expects a reducer function as the second argument, which takes the current state and an action as arguments and returns the new state.
 
 ## Question 6: 👉 What is the correct way to conditionally render a component with state in React ?
  ✅Explanation :
- The correct way to conditionally render a component with state in React is { condition && <MyComponent state={this.state} /> }.The && operator allows you to conditionally render a component based on a condition.If the condition is true, the component will be rendered with the specified state; if the condition is false, the component will not be rendered.You can pass the component with the state as the right - hand operand of the && operator.You can access the component's state using the this.state object.
+ The correct way to conditionally render a component with state in React is `{ condition && <MyComponent state={this.state} /> }`.The `&&` operator allows you to conditionally render a component based on a condition.If the condition is true, the component will be rendered with the specified state; if the condition is false, the component will not be rendered.You can pass the component with the state as the right - hand operand of the `&&` operator.You can access the component's state using the `this.state` object.
 
 ## Question 7: 👉 What is the correct way to listen for multiple events in React ?
 ✅Explanation :
-The correct way to listen for multiple events in React is element.addEventListener('click', myEventHandler).addEventListener('submit', myEventHandler).You can chain multiple calls to the addEventListener method to listen for multiple events on the same element.Each call should specify the event type and the event handler as arguments.
+The correct way to listen for multiple events in React is `element.addEventListener('click', myEventHandler).addEventListener('submit', myEventHandler)`.You can chain multiple calls to the `addEventListener` method to listen for multiple events on the same element.Each call should specify the event type and the event handler as arguments.
 
 ## Question 8: 👉What is the difference between a prop and a state in React ?
 ✅Explanation :
@@ -51,15 +51,15 @@ You cannot pass a portal as a prop in React because a portal is not a valid valu
 
 ## Question 12: 👉What is the purpose of the componentWillUnmount method in a class component in React ?
  ✅Explanation :
-The purpose of the componentWillUnmount method in a class component in React is to perform actions before the component is unmounted.It is called before the component is unmounted and is used to clean up or cancel any ongoing processes or subscriptions.
+The purpose of the `componentWillUnmount` method in a class component in React is to perform actions before the component is unmounted.It is called before the component is unmounted and is used to clean up or cancel any ongoing processes or subscriptions.
 
 ## Question 13: 👉 What is the correct way to bind an event handler to a specific instance in React ?
   ✅Explanation :
- The correct way to bind an event handler to a specific instance in React is onClick = { myEventHandler.bind(this) }.The bind method creates a new function that has its this value bound to the specified object.It should be called on the event handler function or method and the object should be passed as an argument.
+ The correct way to bind an event handler to a specific instance in React is `onClick = { myEventHandler.bind(this) }`.The `bind` method creates a new function that has its this value bound to the specified object.It should be called on the event handler function or method and the object should be passed as an argument.
 
 ## Question 14: 👉 What is the purpose of the useCallback hook in React ?
 ✅Explanation :
- The purpose of the useCallback hook in React is to define the callback of a function component. It allows a function component to have a callback that is memoized and that only changes if the dependencies have changed.It is useful for optimizing the performance of callbacks.
+ The purpose of the `useCallback` hook in React is to define the callback of a function component. It allows a function component to have a callback that is memoized and that only changes if the dependencies have changed.It is useful for optimizing the performance of callbacks.
 
 ## Question 15: 👉 What is the purpose of a portal in React ?
 ✅Explanation :
@@ -114,8 +114,7 @@ The correct way to stop listening for an event in React is `element.removeEventL
  ✅Explanation :
  The purpose of the `useState` hook in React is to define the state of a function component. It allows a function component to have a state and to update the state when the component is re-rendered.
 
-## Question 27: 👉
-What is the purpose of the `shouldComponentUpdate` method in a class component in React ?
+## Question 27: 👉 What is the purpose of the `shouldComponentUpdate` method in a class component in React ?
  ✅Explanation :
 The purpose of the `shouldComponentUpdate` method in a class component in React is to determine if the component should update when the props or state change.It is called before the component is updated and is used to optimize performance by allowing the component to return false if it determines that the component does not need to be re - rendered.
 
