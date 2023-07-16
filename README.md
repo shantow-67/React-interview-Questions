@@ -132,6 +132,86 @@ A higher-order component in React is a function that takes a component as an arg
 
 
 
+## Question 31: 👉 Can you use class in JSX ?
+✅Explanation :
+ You cannot use the `class` keyword in JSX because it is a reserved word in JavaScript.Instead, you should use the `className` attribute to specify a class for an element.
+
+## Question 32: 👉 What is JSX ?
+
+✅Explanation :
+ `JSX` is a syntax extension for `JavaScript` that allows you to write HTML - like syntax in your code.It is not a preprocessor for `HTML`, `CSS`, or `JSON`.
+
+## Question 33: 👉 What is a React component ?
+✅Explanation :
+A React component is an object that represents a piece of UI in a React application.It is a reusable piece of code that can be rendered multiple times.
+
+## Question 34: 👉 Can you use a pure component as a stateful component in React ?
+✅Explanation :
+You cannot use a pure component as a stateful component in React because a pure component is a function that does not have a state object.It is a simpler alternative to a class component that does not implement state or lifecycle methods.
+
+## Question 35: 👉 What is the correct way to pass an event object to an event handler in React ?
+ ✅Explanation :
+ The correct way to pass an event object to an event handler in React is `onClick = {(e) => myEventHandler(e) }`. The event object contains information about the event, such as the target element, the type of event, and the time the event occurred.It should be passed as an argument to the event handler function or method inside an arrow function.
+
+## Question 36: 👉 Can you use the `useImperativeHandle` hook with an empty object as the third argument in React ?
+✅Explanation :
+You can use the `useImperativeHandle` hook with an empty object as the third argument in React.When the `useImperativeHandle` hook is called with an empty object as the third argument, it does not expose any imperative methods or properties to the parent component.This is useful for scenarios where you want to use the `useImperativeHandle` hook but do not need to expose any imperative methods or properties.
+
+## Question 37: 👉 What is the purpose of the `useEffect` hook in React ?
+✅Explanation :
+The purpose of the `useEffect` hook in React is to perform actions after the component is updated.It allows a function component to have side effects and to perform tasks such as making API calls or subscribing to events.
+
+## Question 38: 👉 Can you pass props to a higher - order component in React ?
+✅Explanation :
+You can pass props to a higher - order component in React by calling the higher - order component function and passing it the props as an argument.The higher - order component can then pass the props down to the wrapped component.
+
+## Question 39: 👉 What is the correct way to render a list of components in React ?
+✅Explanation :
+The correct way to render a list of components in React is `{ list.map(item => <MyComponent />) }`. The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.You can pass a function to the `map()` method that returns a component to be rendered for each item in the list.You can then wrap the resulting array in a parent element, such as a `<div>`, and pass it to the `render()` method.
+
+## Question 40: 👉 Can you pass a state to a child component as a prop ?
+✅Explanation :
+ You can pass a state to a child component as a prop by passing it as an argument to the child component when you render it.This allows you to share state between components.
+
+ ## Question 41: 👉 Can you use style in JSX ?
+ ✅Explanation :
+ You can use the `style` attribute in JSX to specify inline styles for an element.The `style` value should be an object that specifies the styles as properties and values.
+
+## Question 42: 👉 What is the purpose of a fragment in React ?
+✅Explanation  :
+The purpose of a fragment in React is to group children without adding an extra node to the DOM.It helps to avoid unnecessary wrapping elements and improve the readability and structure of the JSX.
+
+## Question 43: 👉 What is a stateful component in React ?
+✅Explanation :
+ A stateful component in React is a component that does have a state object.It is a class that extends the React.Component class and has a render method.
+
+## Question 44: 👉 What is the correct way to attach an event handler to an element in React ?
+✅Explanation :
+The correct way to attach an event handler to an element in React is `element.addEventListener('click', myEventHandler)`.The `addEventListener` method allows you to attach an event handler to an element and to specify the type of event to listen for.It should be called on the element and it takes the event type and the event handler as arguments.
+
+## Question 45: 👉 What is the purpose of the useRef hook in React ?
+✅Explanation :
+The purpose of the `useRef` hook in React is to define the ref of a function component. It allows a function component to have a mutable ref object that can be used to store a value across renders.It is similar to the ref attribute in `JSX`.
+
+## Question 46: 👉 What is the purpose of rendering elements in React ?
+✅Explanation :
+The purpose of rendering elements in React is to render `HTML` elements.React uses a virtual DOM to efficiently update the actual DOM and reduce the number of DOM manipulations.
+
+## Question 47: 👉 What is a fragment in React ?
+✅Explanation :
+A fragment in React is an object that represents a group of `children` without adding an extra node to the DOM.It allows you to return multiple elements from a component's render method without wrapping them in an extra element.
+
+## Question 48: 👉 What is the correct way to pass an argument to an event handler in React ?
+✅Explanation :
+The correct way to pass an argument to an event handler in React is `onClick = {() => myEventHandler(arg) }`. The event handler should be a function or a method that takes an argument and it should be called inside an arrow function. The arrow function should be passed as a prop to the element that triggers the event.
+
+## Question 49: 👉 Can you use the `addEventListener` method in a function component in React ?
+✅Explanation :
+You can use the `addEventListener` method in a function component in React.The `addEventListener` method allows you to attach an event handler to an element and to specify the type of event to listen for.It should be called on the element and it takes the event type and the event handler as arguments.
+
+## Question 50: 👉 Can you use the `addEventListener` method with a string as the first argument in React ?
+✅Explanation :
+You can use the `addEventListener` method with a string as the first argument in React, but the string should be the type of the event, such as `click` or `submit`.The `addEventListener` method expects a string as the first argument, which is the type of the event to listen for.The event handler should be passed as the second argument.
 
 
 
