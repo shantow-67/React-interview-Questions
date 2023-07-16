@@ -39,7 +39,7 @@ The difference between a prop and a state in React is that a prop is an argument
 
 ## Question 9: 👉 Can you use a JSX spread attribute with an array in React ?
  ✅Explanation :
- You can use a JSX spread attribute with an array in React if the array has objects as elements.The spread attribute will spread the properties of the objects into separate props.If the array has elements of a different type, the spread attribute will not work.
+ You can use a `JSX` spread attribute with an array in React if the array has objects as elements.The spread attribute will spread the properties of the objects into separate props.If the array has elements of a different type, the spread attribute will not work.
 
 ## Question 10: 👉 Can you pass a portal as a prop in React ?
  ✅Explanation :
@@ -214,7 +214,45 @@ You can use the `addEventListener` method in a function component in React.The `
 You can use the `addEventListener` method with a string as the first argument in React, but the string should be the type of the event, such as `click` or `submit`.The `addEventListener` method expects a string as the first argument, which is the type of the event to listen for.The event handler should be passed as the second argument.
 
 
+## Question 51: 👉 Can you use JSX with other JavaScript libraries ?
+✅Explanation :
+ `JSX` can be used with other `JavaScript` libraries because it is a syntax extension for JavaScript.It is not tied to any specific library or framework.
 
+## Question 52: 👉 What is the purpose of the `useMemo` hook in React ?
+✅Explanation :
+The purpose of the `useMemo` hook in React is to perform memoization in a function component. It allows a function component to memoize a value and to only recalculate the value if the dependencies have changed.It is useful for optimizing the performance of expensive calculations.
+
+## Question 53: 👉 What is the correct way to listen for an event on the document object in React ?
+ ✅Explanation :
+The correct way to listen for an event on the document object in React is `document.addEventListener('click', myEventHandler)`.The `addEventListener` method allows you to attach an event handler to the document object and to specify the type of event to listen for.It should be called on the document object and it takes the event type and the event handler as arguments.
+
+## Question 54: 👉 Can you render a higher - order component in React ?
+✅Explanation :
+You can render a higher - order component in React by calling the `higher - order` component function and passing it a component as an argument.The returned component can then be rendered like any other component.
+
+## Question 55: 👉 What is the correct way to handle form radio button changes in React ?
+✅Explanation :
+The correct way to handle form radio button changes in React is `onChange = { e => this.setState({ value: e.target.value }) }`.The `setState()` method of a React component updates the component's state and triggers a re-render of the component. You can pass a function to the onChange prop of the radio button element that updates the component's state with the value of the selected radio button.You can access the value of the selected radio button in the function by accessing the target property of the Event object and the value property of the target.You can update the component's state using the `setState()` method and passing an object with the updated state as an argument.
+
+## Question 56: 👉 What is the purpose of the constructor method in a class component in React ?
+✅Explanation :
+The purpose of the constructor method in a class component in React is to define the initialization of the component.It is called before the component is mounted and is used to set the initial state of the `component`,`bind event handlers`, and perform other setup tasks.
+
+## Question 57: 👉 Can you use variables in JSX ?
+✅Explanation :
+You can use variables in `JSX` by wrapping them in curly braces.This allows you to insert dynamic values into your `JSX` code.
+
+## Question 58: 👉 What is the correct way to handle form submissions in React ?
+✅Explanation :
+The correct way to handle form submissions in React is `onSubmit = { e => e.preventDefault() }`.The `preventDefault()` method of the Event object prevents the default action of the event from being triggered.You can pass a function to the `onSubmit` prop of the form element that prevents the default action of the submit event by calling the `preventDefault()` method.You can access the Event object in the function by passing it as an argument, and use the `preventDefault()` method to prevent the form from being submitted.
+
+## Question 59: 👉 What is the correct way to prevent the default behavior of an event in React ?
+✅Explanation :
+The correct way to prevent the default behavior of an event in React is `e.preventDefault()`.The `preventDefault` method cancels the default action of the event, such as submitting a form or following a link.It should be called inside the event handler function or method.
+
+##  Question 60: 👉 What is the correct way to handle form checkbox changes in React ?
+✅Explanation :
+The correct way to handle form checkbox changes in React is `onChange = { e => this.setState({ value: e.target.checked }) }`.The `setState()` method of a React component updates the component's state and triggers a re-render of the component. You can pass a function to the `onChange` prop of the checkbox element that updates the component's state with the checked state of the checkbox.You can access the checked state of the checkbox in the function by accessing the target property of the Event object and the checked property of the target.You can update the component's state using the `setState()` method and passing an object with the updated state as an argument.
 
 
 
