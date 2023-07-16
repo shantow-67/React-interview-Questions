@@ -8,7 +8,7 @@ The correct way to conditionally render an element in React is { condition && <E
 ## Question 2: 👉 What is the correct way to conditionally render a component with props in React ?
 
  ✅Explanation :
- The correct way to conditionally render a component with props in React is { condition && <MyComponent prop1={value1} prop2={value2} /> }.The && operator allows you to conditionally render a component based on a condition.If the condition is true, the component will be rendered with the specified props; if the condition is false, the component will not be rendered.You can pass the component with the props as the right - hand operand of the && operator.
+ The correct way to conditionally render a component with props in React is `{ condition && <MyComponent prop1={value1} prop2={value2} /> }`.The `&&` operator allows you to conditionally render a component based on a condition.If the condition is true, the component will be rendered with the specified props; if the condition is false, the component will not be rendered.You can pass the component with the props as the right - hand operand of the`&&` operator.
 
 
 ##   Question 3: 👉 Can you use JavaScript expressions in JSX ?
@@ -75,11 +75,11 @@ The map() method creates a new array with the results of calling a provided func
 
 ## Question 17: 👉 What is the correct way to render a list of components with props in React ?
 ✅Explanation :
-The correct way to render a list of components with props in React is { list.map(item => <MyComponent prop={item} />) }. The map() method creates a new array with the results of calling a provided function on every element in the calling array.You can pass a function to the map() method that returns a component with a prop to be rendered for each item in the list.You can then wrap the resulting array in a parent element, such as a<div>, and pass it to the render() method.
+The correct way to render a list of components with props in React is `{list.map(item => <MyComponent prop={item} />)}`. The map() method creates a new array with the results of calling a provided function on every element in the calling array.You can pass a function to the map() method that returns a component with a prop to be rendered for each item in the list.You can then wrap the resulting array in a parent element, such as a<div>, and pass it to the render() method.
 
 ## Question 18: 👉 What is the correct way to conditionally render an element based on a component's state in React?
  ✅Explanation :
-The correct way to conditionally render an element based on a component's state in React is {this.state.condition && <Element />}. The && operator allows you to conditionally render an element based on a condition. If the condition is true, the element will be rendered; if the condition is false, the element will not be rendered. You can access the component's state using the this.state object.
+The correct way to conditionally render an element based on a component's state in React is `{this.state.condition && <Element />}`. The && operator allows you to conditionally render an element based on a condition. If the condition is true, the element will be rendered; if the condition is false, the element will not be rendered. You can access the component's state using the this.state object.
 
 ## Question 19: 👉 What is the purpose of the componentDidUpdate method in a class component in React ?
 ✅Explanation :
